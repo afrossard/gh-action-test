@@ -24,7 +24,7 @@ jobs:
         with:
           push: false
           context: .
-          file: ./Dockerfile
+          file: ./Containerfile
           tags: |
-            ghcr.io/netbootxyz/${{ github.workflow }}:latest
-            ghcr.io/netbootxyz/${{ github.workflow }}:${{ github.sha }}
+            ghcr.io/afrossard/${{ github.workflow }}:latest
+            ghcr.io/afrossard/${{ github.workflow }}:${{ github.sha }}
